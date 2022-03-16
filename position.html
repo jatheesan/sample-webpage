@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The position Property</title>
+    <style>
+        body, html {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* padding-bottom: 1000px; */
+        }
+
+        .parent{
+            background-color: khaki;
+            width: 300px;
+            position: relative;
+        }
+
+        .child{
+            background-color: gold;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            font-size: 1.5rem;
+        }
+
+        .bg1{
+            background-color: darksalmon;
+        }
+
+        .bg2{
+            background-color: rgb(243, 133, 96);
+        }
+
+        .child{
+            background-color: rgb(218, 84, 40);
+            position: absolute;
+            top: 50px;
+            left: 80px;
+        }
+
+        .bg4{
+            background-color: rgb(170, 48, 7);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child bg1">Child 1</div>
+        <div class="child bg2">Child 2</div>
+        <div class="child bg3">Child 3 (position: absolute)</div>
+        <div class="child bg4">Child 4</div>
+        <!-- <div class="child bg4">Child 4</div>
+        <div class="child bg4">Child 4</div>
+        <div class="child bg4">Child 4</div>
+        <div class="child bg4">Child 4</div> -->
+
+    </div>
+</body>
+</html>
